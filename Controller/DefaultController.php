@@ -7,9 +7,16 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    
-    public function indexAction($name)
+
+    public function indexAction()
     {
-        return $this->render('ThemeCoreBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('ThemeCoreBundle:Default:xhtmlTestPage.html.twig');
     }
+
+    public function xhtmlTestPageAction()
+    {
+        return $this->render('ThemeCoreBundle:Default:xhtmlTestPage.html.twig');
+    }
+
+
 }
